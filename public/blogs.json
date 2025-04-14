@@ -1,0 +1,62 @@
+[
+ {
+   "id": "1",
+   "cover_pic": "https://images.unsplash.com/photo-1507842217343-583bb7270b66",
+   "title": "Mastering the Art of Focus",
+   "author_name": "Ethan Parker",
+   "author_img": "https://randomuser.me/api/portraits/men/32.jpg",
+   "date": "2025-04-10",
+   "hashtags": ["#Productivity", "#Mindset", "#Focus"],
+   "img": "https://images.unsplash.com/photo-1520975922059-b90f1d0e7d1d",
+   "posted_date": "April 10, 2025",
+   "reading_time": 6
+ },
+ {
+   "id": "2",
+   "cover_pic": "https://images.unsplash.com/photo-1581093588401-7495ef7c7dcb",
+   "title": "10 JavaScript Tricks Every Developer Should Know",
+   "author_name": "Sophia Nguyen",
+   "author_img": "https://randomuser.me/api/portraits/women/45.jpg",
+   "date": "2025-04-08",
+   "hashtags": ["#JavaScript", "#WebDev", "#Tips"],
+   "img": "https://images.unsplash.com/photo-1603575448931-1784b4c2a94b",
+   "posted_date": "April 8, 2025",
+   "reading_time": 4
+ },
+ {
+   "id": "3",
+   "cover_pic": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+   "title": "Exploring the Hidden Gems of Iceland",
+   "author_name": "Liam Johansson",
+   "author_img": "https://randomuser.me/api/portraits/men/41.jpg",
+   "date": "2025-03-30",
+   "hashtags": ["#Travel", "#Adventure", "#Iceland"],
+   "img": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+   "posted_date": "March 30, 2025",
+   "reading_time": 5
+ },
+ {
+   "id": "4",
+   "cover_pic": "https://images.unsplash.com/photo-1510626176961-4b37d0ba3c17",
+   "title": "The Science Behind Your Morning Coffee",
+   "author_name": "Isabella Lopez",
+   "author_img": "https://randomuser.me/api/portraits/women/60.jpg",
+   "date": "2025-04-01",
+   "hashtags": ["#Coffee", "#Lifestyle", "#Science"],
+   "img": "https://images.unsplash.com/photo-1542831371-d531d36971e6",
+   "posted_date": "April 1, 2025",
+   "reading_time": 3
+ },
+ {
+   "id": "5",
+   "cover_pic": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+   "title": "5 Meditation Techniques Backed by Science",
+   "author_name": "Noah Patel",
+   "author_img": "https://randomuser.me/api/portraits/men/27.jpg",
+   "date": "2025-03-27",
+   "hashtags": ["#Meditation", "#Wellness", "#MentalHealth"],
+   "img": "https://images.unsplash.com/photo-1504198458649-3128b932f49b",
+   "posted_date": "March 27, 2025",
+   "reading_time": 7
+ }
+]
