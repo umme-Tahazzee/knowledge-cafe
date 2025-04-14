@@ -1,32 +1,37 @@
-import React from 'react'
+import { LuBookmarkPlus } from "react-icons/lu";
 
-const Blog = ({blog}) => {
- const {cover_pic,author_name,date,
-   author_img, title, hashtags, reading_time, posted_date} = blog
+const Blog = ({blog, handleAddToBookMark}) => {
+ const {cover, author, 
+   author_img, title, hashtags, reading_time, posted_date}
+    = blog
   return (
     <div className=''>
-       <div>
-          <img  className='h-[200px] w-[300px]  ' src={cover_pic} alt="" srcset="" />
-         <div className='flex justify-between'>
-             
+       <div className='mb-10'>
+          <img  className='h-[200px] w-full mb-8 rounded-lg ' src={cover} alt="" />
+           <div className='flex justify-between'>         
             <div className='flex' >
-              <img className='w-12 h-[40px] rounded-full '  src={author_img} alt={author_name} />
-             <div className='ml-6'>
-                 <h3 className="text-2xl">{author_name}</h3>
+              <img className='w-12'  src={author_img} alt={author} />
+             <div className='ml-6 '>
+                 <h3 className="font-bold text-xl">{author}</h3>
                  <p>{posted_date}</p>
              </div>
             </div>
             {/* reading section  */}
-            <div>
+            <div className="">
               <span>{reading_time} min read</span>
+              <button  
+               onClick={handleAddToBookMark}             
+               className='ml-2  text-xl text-gray-500'><LuBookmarkPlus /></button>
             </div>
          </div>
-         <h2 className='text-[20px]'>{title}</h2>
+         <h2 className='text-xl mt-4 font-bold'>{title}</h2>
          <p>
           {
-            hashtags.map((hash, idx) => <span key={idx}> <a href=''> {hash} </a> </span> )
+            hashtags.map((hash, idx) => <span key={idx}> <a className='text-gray-400 gap-[10px]' href=''> #{hash} </a> </span> )
           }
          </p>
+         <button    
+         className='border-b-2 text-blue-400 mt-6 text-sm '>Mark As Read</button>
        </div>
     </div>
   )
