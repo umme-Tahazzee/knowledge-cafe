@@ -1,6 +1,6 @@
 import { LuBookmarkPlus } from "react-icons/lu";
 
-const Blog = ({blog, handleAddToBookMark}) => {
+const Blog = ({blog, handleAddToBookMark, handleMarkAsRead}) => {
  const {cover, author, 
    author_img, title, hashtags, reading_time, posted_date}
     = blog
@@ -19,6 +19,7 @@ const Blog = ({blog, handleAddToBookMark}) => {
             {/* reading section  */}
             <div className="">
               <span>{reading_time} min read</span>
+              {/* bookmarks btn  */}
               <button  
                onClick={()=>handleAddToBookMark(blog)}             
                className='ml-2  text-xl text-gray-500'><LuBookmarkPlus /></button>
@@ -30,8 +31,9 @@ const Blog = ({blog, handleAddToBookMark}) => {
             hashtags.map((hash, idx) => <span key={idx}> <a className='text-gray-400 gap-[10px]' href=''> #{hash} </a> </span> )
           }
          </p>
-         <button    
-         className='border-b-2 text-blue-400 mt-6 text-sm '>Mark As Read</button>
+         <button onClick={()=>handleMarkAsRead(reading_time)}   
+         className='border-b-2 text-blue-400 mt-6 text-sm '>
+          Mark As Read</button>
        </div>
     </div>
   )
